@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<title>iMine</title>
+    	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    	<link rel="stylesheet" type="text/css" media="screen" href="inc/imining.css" />
+		<script type="text/javascript" charset="utf-8" src="inc/js/phonegap-0.9.2.js"></script>
+	 	<script type="text/javascript" charset="utf-8" src="inc/js/jquery-1.4.2.js"></script>
+	 	<script type="text/javascript" charset="utf-8" src="inc/js/cookie.js"></script>
+		<script type="text/javascript" charset="utf-8" src="inc/js/lang_en.js"></script>
+		<script type="text/javascript" charset="utf-8" src="inc/js/html.js"></script>
+		<script type="text/javascript" charset="utf-8" src="inc/js/math.js"></script>
+		<script type="text/javascript" charset="utf-8" src="inc/js/iMiner.js"></script>
+		<script type="text/javascript" charset="utf-8" src="inc/js/iMine.js"></script>
+		<script type="text/javascript" src="phonegap.js" charset="utf-8"></script>
+		//<![CDATA[
+			// global variables
+			var root = "http://www.vhplab.net/horaciogd/imining/";
+			var flags = new Array();
+			var user = null;
+			var t = null;
+			var watch = null;
+			var write = new Lang();
+			var minero = new iMiner();
+			var accelData = new Array(0.0,0.0,0.0);
+			var tracking = false;
+			document.addEventListener("deviceready", checkCookie, false);
+		//]]>
+		</script>
+	</head>
+	<body>
+		<div id="imining" class="form">
+			<h1 class="header"><img src="inc/img/imine_logo_small.png" alt="iMine" /></h1>
+			<div class="wrapper"></div>
+			<div id="miner"></div>
+			<img id="question" class="about" src="inc/img/interrogation_s.png"/>
+		</div>
+	</body>
+</html>

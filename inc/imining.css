@@ -1,0 +1,305 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color:black;
+	font-family: "Myriad Pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: red;
+}
+h1{
+	font-size: 30px;
+	padding: 0;
+	margin: 0;
+}
+h2{
+	font-weight: normal;
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+#imining {
+	position: relative;
+	margin: 1px auto 0 auto;
+	height: 452px;
+	width: 318px;
+	border: solid 1px #ccc;
+	overflow: hidden;
+}
+.form {
+	background-image:url('img/background.jpg');
+}
+.game {
+	background-image:url('img/game_background.jpg');
+}
+.gameover {
+	background-image:url('img/gameover_background.jpg');
+}
+.transparent {
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+h1.header {
+	margin: 30px auto 0 auto;
+	width: 200px;
+	height: 67px;
+}
+#about {
+	font-size: 12px;
+	color: #b4b5b8;
+	text-align: justify;
+}
+.about {
+	position: absolute;
+	bottom: 14px;
+	right: 20px;
+}
+.wrapper {
+	padding: 10px;
+	background-color:black;
+	text-align: center;
+	margin: 0 40px;
+}
+#old_user {
+	padding-top: 20px;
+}
+#new_user {
+	padding-top: 4px;
+}
+
+button, input.submit, a.button {
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 6px;
+	margin: 30px auto;
+	display:block;
+	width: 80%;
+	background-color: #000;
+	font-weight: bold;
+	color: red;
+	border: solid 1px #ccc;
+	text-decoration: none;
+}
+input {
+	width: 96%;
+}
+input.coords {
+	display: inline;
+	width: 45%;
+}
+fieldset {
+	margin: 0 auto 14px auto;
+	width: 80%;
+	font-weight: bold;
+	font-size: smaller;
+	color: red;
+	padding: 4px;
+	border: none;
+	text-align: center;
+}
+#img_flag {
+	float: right;
+	margin-top: -16px;
+	cursor: pointer;
+}
+
+select {
+	padding: 4px;
+}
+
+/*---------*/
+/*  miner  */
+/*---------*/
+#miner {
+	position: relative;
+	text-align: center;
+}
+/*#miner h1 {
+	line-height: 56px;
+	margin: 4px 0;
+	padding: 0;
+}
+#miner h1 img {
+	vertical-align: middle;
+}*/
+
+/*  miner_img  */
+#miner_img {
+	cursor: pointer;
+	position: absolute;
+	/*top: 160px;*/
+	top: 176px;
+	left: 80px;
+	z-index: 3;
+}
+
+/*  soldier_img  */
+#soldier_img {
+	position: absolute;
+	z-index: 2;
+}
+#soldier_img.far {
+	top: 30px;
+	left: 0px;
+}
+#soldier_img.far img {
+	width: 100px;
+	height: 141px;
+}
+#soldier_img.close {
+	top: 18px;
+	left: -40px;
+}
+#soldier_img.close img {
+	width: 223px;
+	height: 300px;
+}
+
+/* miner_data */
+#miner_data {
+	position: absolute;
+	width: 140px;
+	top: 8px;
+	left: 170px;
+	z-index: 4;
+	text-align: left;
+}
+.info h2 {
+	padding-right: 2px;
+	font-size: 12px;
+	padding-left: 30px;
+}
+.info span{
+	font-weight: lighter;
+	font-size: 14px;
+}
+#miner_digs span{
+	display: block;
+	text-align: center;
+	font-weight: normal;
+	font-size: 50px;
+	padding-bottom: 4px;
+}
+
+/* miner_mineral */
+#miner_mineral {
+	position: absolute;
+	top: 9px;
+	left: 130px;
+	z-index: 1;
+}
+
+/* miner_settings */
+#miner_settings {
+	position: absolute;
+	width:120px;
+	top: 158px;
+	left: 204px;
+	z-index: 5;
+}
+#miner_settings button {
+	/*-moz-border-radius: 2px;
+	border-radius: 2px;*/
+	border: none;
+	background-color: transparent;
+	padding: 1px;
+	margin: 0 auto;
+	width: 65%;
+	color: #b4b5b8;
+	font-weight: normal;
+	font-size: 10px;
+}
+
+/* imine_logo */
+#imine_logo {
+	position: absolute;
+	top: 380px;
+	left: 10px;
+	z-index: 0;
+}
+
+/* wwage bar */
+#wwage_wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 452px;
+	width: 318px;
+	background-image:url('img/pattern28-darkgrey.png');
+	z-index: 6;
+}
+#wwage_wrapper h2 {
+	position: absolute;
+	top: 200px;
+	left: 20px;
+}
+#wwage_bar {
+	position: relative;
+	top: 200px;
+	left: 86px;
+	height: 30px;
+	width: 202px;
+	overflow: hidden;
+	border: solid 1px #ccc;
+	background-color: #eaeaea;
+	cursor: pointer;
+}
+#wwage_bar span {
+	position: absolute;
+	padding-top: 6px;
+	font-size: 14px;
+	top: 0;
+	left: 50px;
+	color: #b4b5b8;
+}
+#wwage_bar div {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 30px;
+	width: 0;
+	max-width: 202px;
+	background-color: #000;
+	background-image:url('img/background_bar.jpg');
+}
+
+/* miner_img_dead */
+#miner_img_dead {
+	/*position: absolute;
+	top: 200px;*/
+	padding-top: 180px;
+	width: 263px;
+	margin: 0 auto;
+	text-align: center;
+}
+#miner_img_dead h1 {
+	margin-top: 10px;
+}
+#miner_img_dead button {
+	/*color: #b4b5b8;*/
+	margin: 4px auto;
+}
+
+/* miner_gameover */
+#miner_gameover {
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	z-index: 7;
+}
+
+/* miner data */
+#miner_data_list {
+	position: absolute;
+	list-style: none;
+	/*color: #6f7176;*/
+	color: #2a2d35;
+	top: 0;
+	left:0;
+}
+#miner_data_list h2{
+	padding-right: 8px;
+	font-size: 16px;
+}
